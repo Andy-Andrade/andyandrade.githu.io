@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>FPV Drone</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Andres Andrade</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#">Projects</a>
+								<ul>
+									<li><a href="FPV-DRONE.html">FPV-Drone</a></li>
+									<li><a href="Lunar-Bucket.html">Lunar-Bucket</a></li>
+									<li><a href="ROV-Claw.html">ROV-Claw</a></li>
+									<li>
+									
+									</li>
+								</ul>
+							</li>
+							
+							
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>FPV Drone</h2>
+							<p>Mechanical design, testing and flight.</p>
+						</header>
+						<div class="row gtr-150">
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+										<section>
+											<h3>Frame Design</h3>
+											<p>The overal frame design is an X frame (Deadcat), which has 3 main benefits. One of these is even distribution of
+												stress across the motor arms. Second is high maneuverability and lastly the camera mounting position is good for 
+												landscape flights
+											</p>
+											<footer>
+												<ul class="actions">
+													
+												</ul>
+											</footer>
+										</section>
+										<hr />
+										<section>
+											<a href="#" class="image fit"><img src="images/Screenshot 2026-02-26 021136.png" alt="" /></a>
+											<h3>Material Choice</h3>
+											<p>The first choice and testing of the material for the frame was acrylic since it was hard. This was a problem because it cracked easily, 
+												which was found out upon the first flight. After more research a carbon fiber nylon 3D filament was chosen for its high tensile strength (100 MPa).
+												Along with printing settings being adjusted this material provided stable flight and good strength in crashes.
+											</p>
+											<footer>
+												<ul class="actions">
+												
+												</ul>
+											</footer>
+										</section>
+									</section>
+
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
+
+								<!-- Content -->
+									<section id="content">
+										<a href="#" class="image fit"><img src="images/20241125_211230.jpg" alt="" /></a>
+										<h3>Structural Optimization & Iteration</h3>
+										<p>The frame was modeled in Autodesk Fusion and was refined ovr time through 6 main designs to optimize weight distribution and stiffness.
+											Finite Element Analysis (FEA) was used to evaluate stress hot spots at the motor mounts, throughout the arms and stack interfaces under 
+											simulated thrust loads (~1.8-2.2 kg total thrust per motor). 
+										</p>
+										<p>Localized reinforcement and arm thickening from 10mm to 12.7mm which reduced peak simulated stress by 28% while increasing frame mass
+											by less than 6%. Fillets and geometry smoothing were used to reduce stress and improve durability under vibration. 
+										</p>
+										<h3>Testing, Materials & Performance Validation</h3>
+										<p>Initial prototypes were made from acrylic, which had brittle fracture during early flight tests. Carbon fiber reinforced nylon (PA6-CF) was chosen
+											because of its high tensile strength (~100 MPa) and impact resistance, while also reducing vibrations. Print parameters were also optimized, increasing 
+											infill density from 20% to 40% and wall count to 5 layers, resulting in:
+										</p>
+										<ul>
+											<li>~35% increase in structural rigidity</li>
+											<li>Noticeable reduction in arm flex under high throttle</li>
+											<li>Improved crash survivability</li>
+											<li>Stabilized flight controller and camera footage</li>
+											
+										</ul>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						
+						<li><a href="https://www.linkedin.com/in/andres-andrade-454906280/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
