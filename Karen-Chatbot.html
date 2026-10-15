@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Karen Chatbot Robot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Andres Andrade</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#">Projects</a>
+								<ul>
+									<li><a href="SP500-Symbolic-Regression.html">S&amp;P 500 Symbolic Regression</a></li>
+									<li><a href="Grasp-Pipeline.html">Robot Grasp Pipeline</a></li>
+									<li><a href="Karen-Chatbot.html">Karen Chatbot Robot</a></li>
+									<li><a href="Deadline-App.html">Course Deadline App</a></li>
+									<li><a href="FPV-DRONE.html">FPV-Drone</a></li>
+									<li><a href="Lunar-Bucket.html">Lunar-Bucket</a></li>
+									<li><a href="ROV-Claw.html">ROV-Claw</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Karen Chatbot Robot</h2>
+							<p>A talking campus robot with a personality: a conversational AI styled after Karen from SpongeBob
+								that also quizzes people on trivia and rewards right answers with candy.
+							</p>
+						</header>
+
+						<section id="content">
+							<h3>Overview</h3>
+							<p>The robot drives around campus using LiDAR navigation built by a separate team on ROS 2.
+								My part is the chatbot: it talks with people, asks trivia questions, and decides when to reward them.
+								When someone answers correctly, it signals a motor that opens a door and drops candy into their hand.
+							</p>
+
+							<h3>Design goals</h3>
+							<ul>
+								<li><strong>Fast, on-the-fly voice:</strong> responses are generated live rather than played from pre-recorded lines, so conversations feel natural</li>
+								<li><strong>Character consistency:</strong> the chatbot stays in Karen's voice across open-ended chat and trivia</li>
+								<li><strong>Simple triggers:</strong> it starts when someone stands in front of it or presses a button</li>
+							</ul>
+
+							<h3>Hardware</h3>
+							<p>Two Raspberry Pis, one running the chatbot and one for the navigation team, connected over a mobile
+								hotspot, with a directional microphone to pick out the person talking in a noisy outdoor space.
+							</p>
+
+							<h3>Status</h3>
+							<p>In development. The main work ahead is getting low-latency voice responses working reliably on the Pi
+								and integrating with the rest of the robot.
+							</p>
+
+							<h3>Tools</h3>
+							<p>Python, Raspberry Pi, speech and language models, ROS 2 (navigation team interface)</p>
+						</section>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://github.com/Andy-Andrade" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/andres-andrade-454906280/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Andres Andrade</li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

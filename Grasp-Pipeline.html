@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Robot Grasp Pipeline</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Andres Andrade</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#">Projects</a>
+								<ul>
+									<li><a href="SP500-Symbolic-Regression.html">S&amp;P 500 Symbolic Regression</a></li>
+									<li><a href="Grasp-Pipeline.html">Robot Grasp Pipeline</a></li>
+									<li><a href="Karen-Chatbot.html">Karen Chatbot Robot</a></li>
+									<li><a href="Deadline-App.html">Course Deadline App</a></li>
+									<li><a href="FPV-DRONE.html">FPV-Drone</a></li>
+									<li><a href="Lunar-Bucket.html">Lunar-Bucket</a></li>
+									<li><a href="ROV-Claw.html">ROV-Claw</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Robot Grasp Pipeline</h2>
+							<p>A modular grasp-synthesis pipeline for a 6-axis robot arm in MuJoCo, combining classical
+								grasp sampling with a learned residual policy. Team project, summer 2026.
+							</p>
+						</header>
+
+						<section id="content">
+							<h3>Overview</h3>
+							<p>Our four-person team built a pipeline that takes a CAD model of an object, proposes grasps for it,
+								and executes them with a 6-axis arm in simulation. I worked on pose sensitivity tuning, training
+								on randomized object placements, and object manipulation.
+							</p>
+
+							<h3>Pipeline</h3>
+							<ul>
+								<li><strong>Grasp candidates:</strong> antipodal sampling generates 6-DoF grasp candidates directly from CAD meshes using <code>trimesh</code>. Thin, blade-shaped objects needed special-case handling.</li>
+								<li><strong>Control:</strong> a classical impedance controller handles contact so the arm stays compliant while grasping.</li>
+								<li><strong>Learning:</strong> a TD3-based residual reinforcement learning policy corrects the classical grasp rather than replacing it.</li>
+							</ul>
+
+							<h3>Result</h3>
+							<p>The test task was picking up a fan blade in random poses. Grasp success improved from
+								56% to 85% as the pipeline came together. The project was not fully finished by the end of the
+								summer, but the modular structure meant each stage could be tested on its own.
+							</p>
+
+							<h3>What I took from it</h3>
+							<p>Where to spend learning and where to rely on classical methods, how sensitive a policy is to
+								object pose, and how much of a robotics ML project is evaluation and iteration rather than the model itself.
+							</p>
+
+							<h3>Tools</h3>
+							<p>Python, MuJoCo, trimesh, reinforcement learning (TD3)</p>
+						</section>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://github.com/Andy-Andrade" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/andres-andrade-454906280/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Andres Andrade</li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
